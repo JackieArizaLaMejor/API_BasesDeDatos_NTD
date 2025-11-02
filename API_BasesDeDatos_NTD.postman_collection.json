@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "26f32552-a975-4cad-8c9a-74b17bdaee32",
+		"name": "API_BasesDeDatos_NTD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23229544"
+	},
+	"item": [
+		{
+			"name": "CREAR",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"titulo\": \"Adaptive Sequential Machine Learning\",\r\n    \"autores\": [\"Craig Wilson\", \"Yuheng Bu\", \"Venugopal V. Veeravalli\"],\r\n    \"anio\": 2019,\r\n    \"resumen\": \"Artículo que presenta un marco de aprendizaje secuencial adaptativo, capaz de ajustar modelos a cambios graduales en los datos para mantener un rendimiento óptimo.\",\r\n    \"cantidadReferencias\": 50,\r\n    \"baseDatos\": \"Taylor & Francis\",\r\n    \"revista\": \"Sequential Analysis\",\r\n    \"enlace\": \"https://doi.org/10.1080/07474946.2019.1686889\",\r\n    \"pdf\": \"Adaptive sequential machine learning.pdf\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/articulos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articulos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONSULTAR",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/articulos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articulos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONSULTAR POR ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"titulo\": \"Machine Learning in Drying\",\r\n  \"autores\": [\"Alex Martynenko\", \"N. N. Misra\"],\r\n  \"anio\": 2020,\r\n  \"resumen\": \"Revisión sobre técnicas de aprendizaje automático aplicadas al secado de alimentos.\",\r\n  \"cantidadReferencias\": 105,\r\n  \"baseDatos\": \"Taylor & Francis\",\r\n  \"revista\": \"Drying Technology\",\r\n  \"enlace\": \"https://doi.org/10.1080/07373937.2019.1690502\",\r\n  \"pdf\": \"Machine learning in drying.pdf\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/articulos/6906dc5a8ee10c114cd1897f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articulos",
+						"6906dc5a8ee10c114cd1897f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ACTUALIZAR ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"titulo\": \"Adaptive Sequential Machine Learning\",\r\n    \"autores\": [\"Prueba de editar Yakelin\"],\r\n    \"anio\": 2019,\r\n    \"resumen\": \"Artículo que presenta un marco de aprendizaje secuencial adaptativo, capaz de ajustar modelos a cambios graduales en los datos para mantener un rendimiento óptimo.\",\r\n    \"cantidadReferencias\": 50,\r\n    \"baseDatos\": \"Taylor & Francis\",\r\n    \"revista\": \"Sequential Analysis\",\r\n    \"enlace\": \"https://doi.org/10.1080/07474946.2019.1686889\",\r\n    \"pdf\": \"Adaptive sequential machine learning.pdf\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/articulos/6906db658ee10c114cd1896c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articulos",
+						"6906db658ee10c114cd1896c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ELIMINAR",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"titulo\": \"Adaptive Sequential Machine Learning\",\r\n    \"autores\": [\"Prueba de editar Yakelin\"],\r\n    \"anio\": 2019,\r\n    \"resumen\": \"Artículo que presenta un marco de aprendizaje secuencial adaptativo, capaz de ajustar modelos a cambios graduales en los datos para mantener un rendimiento óptimo.\",\r\n    \"cantidadReferencias\": 50,\r\n    \"baseDatos\": \"Taylor & Francis\",\r\n    \"revista\": \"Sequential Analysis\",\r\n    \"enlace\": \"https://doi.org/10.1080/07474946.2019.1686889\",\r\n    \"pdf\": \"Adaptive sequential machine learning.pdf\"\r\n  }"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/articulos/6906db658ee10c114cd1896c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"articulos",
+						"6906db658ee10c114cd1896c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
